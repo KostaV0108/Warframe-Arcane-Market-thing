@@ -41,8 +41,9 @@ To get your free key:
 3. Click **Create API Key**
 4. Paste it into the app
 
-Free tier includes 15 requests per minute and 1M tokens per day — more than sufficient for personal use of this tool.
-
-The app defaults to **`gemini-2.5-pro`** (override with `VITE_GEMINI_MODEL`, e.g. `gemini-2.5-flash`). Older IDs such as `gemini-1.5-flash` may return **404**.
-
-Output length uses **`maxOutputTokens` 8192** by default so long analyses are not cut off mid-sentence (Pro used to hit a low limit quickly). Override with `VITE_GEMINI_MAX_OUTPUT_TOKENS` if needed. Restart the dev server after changing `.env`.
+## To-do list
+- Add redux to not have arcane page load every time.
+- Add in better information display for each arcane. 
+- Get gemini to not be so bad
+- Filter(?)
+- Comment stuff out and put in good notes so I stop forgetting what things do.
