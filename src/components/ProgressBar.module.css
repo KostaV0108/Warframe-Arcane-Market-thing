@@ -1,0 +1,50 @@
+.wrap {
+  margin: 1rem 0 1.25rem;
+  padding: 0.85rem 1rem;
+  background: rgba(13, 17, 23, 0.9);
+  border: 1px solid rgba(200, 168, 75, 0.2);
+  border-radius: 8px;
+  max-width: 42rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #c8a84b;
+  font-weight: 600;
+}
+
+.pct {
+  font-size: 0.85rem;
+  color: #8b9bab;
+  font-variant-numeric: tabular-nums;
+}
+
+.track {
+  height: 8px;
+  background: rgba(200, 168, 75, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6b5420, #c8a84b);
+  border-radius: 4px;
+  transition: width 0.2s ease;
+}
+
+.label {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #6e7f91;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

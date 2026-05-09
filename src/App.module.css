@@ -1,0 +1,101 @@
+.page {
+  min-height: 100vh;
+  background: radial-gradient(ellipse 120% 80% at 50% -20%, rgba(200, 168, 75, 0.08), transparent),
+    #0d1117;
+  color: #e6edf3;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(13, 17, 23, 0.92);
+  border-bottom: 1px solid rgba(200, 168, 75, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #c8a84b;
+  text-transform: uppercase;
+}
+
+.meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #8b9bab;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hint {
+  color: #8b9bab;
+  font-size: 0.95rem;
+}
+
+.errorBox {
+  padding: 1rem 1.25rem;
+  background: rgba(180, 60, 60, 0.12);
+  border: 1px solid rgba(220, 100, 100, 0.35);
+  border-radius: 8px;
+  max-width: 36rem;
+}
+
+.errorText {
+  margin: 0 0 0.75rem;
+  color: #f0b4b4;
+}
+
+.retry {
+  appearance: none;
+  border: 1px solid #c8a84b;
+  background: rgba(200, 168, 75, 0.12);
+  color: #c8a84b;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.retry:hover {
+  background: rgba(200, 168, 75, 0.22);
+}
+
+.footerNote {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #5c6b7a;
+  max-width: 52rem;
+  line-height: 1.45;
+}

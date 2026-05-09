@@ -1,0 +1,126 @@
+.card {
+  display: grid;
+  grid-template-columns: 2rem 48px 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.65rem 0.75rem;
+  background: rgba(22, 30, 43, 0.85);
+  border: 1px solid rgba(200, 168, 75, 0.12);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.rank {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #c8a84b;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #121a24;
+  border: 1px solid rgba(200, 168, 75, 0.15);
+}
+
+.body {
+  min-width: 0;
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e6edf3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.volume {
+  font-size: 0.8rem;
+  color: #8b9bab;
+  margin-top: 0.15rem;
+}
+
+.barTrack {
+  margin-top: 0.45rem;
+  height: 4px;
+  background: rgba(200, 168, 75, 0.12);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b6914, #c8a84b);
+  border-radius: 2px;
+  min-width: 2px;
+  transition: width 0.25s ease;
+}
+
+/* Skeleton */
+.skeleton {
+  pointer-events: none;
+}
+
+.skelRank {
+  width: 1.5rem;
+  height: 1rem;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #1e2836 0%, #2a3545 50%, #1e2836 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+.skelThumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #1e2836 0%, #2a3545 50%, #1e2836 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+.skelBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.skelLineWide,
+.skelLineNarrow,
+.skelBar {
+  height: 0.65rem;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #1e2836 0%, #2a3545 50%, #1e2836 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+.skelLineWide {
+  width: 70%;
+}
+
+.skelLineNarrow {
+  width: 40%;
+  height: 0.55rem;
+}
+
+.skelBar {
+  margin-top: 0.2rem;
+  height: 4px;
+  width: 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

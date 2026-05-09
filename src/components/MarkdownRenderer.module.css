@@ -1,0 +1,75 @@
+.md {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #c9d1d9;
+}
+
+.md :global(h1),
+.md :global(h2),
+.md :global(h3) {
+  color: #c8a84b;
+  margin: 1.1em 0 0.45em;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.md :global(h1) {
+  font-size: 1.2rem;
+}
+.md :global(h2) {
+  font-size: 1.05rem;
+}
+.md :global(h3) {
+  font-size: 0.98rem;
+}
+
+.md :global(p) {
+  margin: 0.5em 0;
+}
+
+.md :global(ul),
+.md :global(ol) {
+  margin: 0.5em 0;
+  padding-left: 1.35rem;
+}
+
+.md :global(li) {
+  margin: 0.25em 0;
+}
+
+.md :global(code) {
+  font-family: ui-monospace, monospace;
+  font-size: 0.86em;
+  background: rgba(200, 168, 75, 0.1);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+
+.md :global(pre) {
+  background: rgba(13, 17, 23, 0.9);
+  border: 1px solid rgba(200, 168, 75, 0.15);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  margin: 0.65em 0;
+}
+
+.md :global(pre code) {
+  background: none;
+  padding: 0;
+}
+
+.md :global(strong) {
+  color: #e6edf3;
+}
+
+.md :global(a) {
+  color: #c8a84b;
+}
+
+.md :global(blockquote) {
+  margin: 0.65em 0;
+  padding-left: 0.85rem;
+  border-left: 3px solid rgba(200, 168, 75, 0.35);
+  color: #8b9bab;
+}

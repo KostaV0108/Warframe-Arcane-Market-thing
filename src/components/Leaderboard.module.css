@@ -1,0 +1,21 @@
+.section {
+  background: rgba(18, 24, 34, 0.65);
+  border: 1px solid rgba(200, 168, 75, 0.15);
+  border-radius: 12px;
+  padding: 1rem 1rem 0.5rem;
+  min-height: 200px;
+}
+
+.title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #c8a84b;
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(200, 168, 75, 0.15);
+  letter-spacing: 0.02em;
+}
+
+.list {
+  padding-bottom: 0.5rem;
+}
